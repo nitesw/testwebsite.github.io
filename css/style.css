@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Sole Sans;
+  src: url(../font/SoleSans-ExtraBold.ttf);
+}
+
+.bg-light {
+  border: none;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background-color: black;
+  transition: width 0.2s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.worldwide {
+  letter-spacing: 6px;
+}
+.sole-sans {
+  font-family: Sole Sans;
+}
+
+.first-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/banner-img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.first-banner-img img {
+  width: auto;
+}
